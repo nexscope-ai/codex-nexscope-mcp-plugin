@@ -1,0 +1,7 @@
+{
+  "name": "codex-nexscope-mcp-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": { "test": "vitest run" },
+  "devDependencies": { "jsdom": "29.1.1", "vitest": "4.1.8" }
+}

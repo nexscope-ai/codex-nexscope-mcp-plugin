@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-nexscope-mcp-plugin",
+  "version": "0.1.0",
+  "description": "Research ecommerce data directly or build editable Nexscope workflows in Codex.",
+  "author": {
+    "name": "Nexscope",
+    "email": "service@nexscope.ai",
+    "url": "https://www.nexscope.ai"
+  },
+  "homepage": "https://www.nexscope.ai",
+  "license": "LicenseRef-Proprietary",
+  "keywords": [
+    "ecommerce",
+    "product research",
+    "amazon",
+    "tiktok",
+    "temu"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nexscope Research",
+        "shortDescription": "Ecommerce research workflows",
+        "longDescription": "Call published Nexscope skills directly for product and market research. Build editable Research Canvas drafts in conversation, confirm runs, and export complete saved results.",
+        "developerName": "Nexscope",
+        "category": "Data & Analytics",
+        "capabilities": [
+          "Interactive",
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://www.nexscope.ai",
+        "supportURL": "https://www.nexscope.ai/mcp-map",
+        "privacyPolicyURL": "https://www.nexscope.ai/privacy",
+        "termsOfServiceURL": "https://www.nexscope.ai/terms",
+        "defaultPrompt": [
+          "Research Amazon products for my keyword and summarize the results.",
+          "Create an editable research workflow for comparing products, and let me review it before running.",
+          "Show me my saved research workflows and results."
+        ],
+        "brandColor": "#7C3AED",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "onboardingSkill": "./skills/nexscope/SKILL.md"
+    }
+  }
+}
