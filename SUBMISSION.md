@@ -2,6 +2,10 @@
 
 This is a separate MCP + Skill listing candidate. The local portable package is version 0.1.0. The test environment still has the earlier 0.4.0 server candidate; production behavior is unverified. Local package and simulated Research Canvas checks do not prove live OAuth, host UI behavior, or directory eligibility. No upload, installation, deployment, or publication has been performed for 0.1.0.
 
+## MCP Registry
+
+`server.json` is the remote-only MCP Registry metadata for the same production endpoint used by `mcp.json`. It is intentionally separate from `plugin.json`: the Codex listing and the official MCP Registry listing have independent validation, authentication, and publication steps. Publish it with the official `mcp-publisher` CLI after production OAuth and tool checks pass.
+
 ## Prepared locally
 
 - One remote MCP server in `mcp.json`, direct skill guidance, editable Research Canvas drafts, owner-scoped result reads, icon, and the scoped, hash-verified CLI wheel. Ordinary skill results remain complete text and structured data.

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.nexscope-ai/nexscope",
+  "title": "Nexscope Ecommerce Research",
+  "description": "Ecommerce product, keyword, and market research via Nexscope.",
+  "websiteUrl": "https://www.nexscope.ai",
+  "repository": {
+    "url": "https://github.com/nexscope-ai/codex-nexscope-mcp-plugin",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.nexscope.ai/api/skill-api/v2/mcp"
+    }
+  ]
+}
